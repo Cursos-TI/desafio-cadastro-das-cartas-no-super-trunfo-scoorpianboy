@@ -2,14 +2,14 @@
 
 int main () {
     /* -------- Carta 1 -------- */
-    char estado1;
+    char estado1[50];
     char codigo1[4];         /* A01 -> 3 chars*/
     char cidade1[50];        /* até 49 chars */
     int populacao1, pontos1;
     float area1, pib1;
 
     /* -------- Carta 2 -------- */
-    char estado2;
+    char estado2[50];
     char codigo2[4];
     char cidade2[50];
     int populacao2, pontos2;
@@ -19,8 +19,8 @@ int main () {
     printf("Use ponto como separador decimal (ex.: 1521.11)\n\n");
 
     /* -------- Leitura da Carta 1 -------- */
-    printf("Carta 1 - Estado (A a H): \n");
-    scanf(" %c", &estado1);
+    printf("Carta 1 - Estado (Nome completo): \n");
+    scanf(" %49[^\n]", estado1);
 
     printf("Carta 1 - Codigo (ex.: A01): \n");
     scanf(" %3s", codigo1);
@@ -40,11 +40,11 @@ int main () {
     printf("Carta 1 - Numero de Pontos Turisticos (inteiro): \n");
     scanf(" %d", &pontos1);
 
-    printf("\n");
+    printf("\n"); 
 
     /* -------- Leitura da Carta 2 -------- */
-    printf("Carta 2 - Estado (A a H): \n");
-    scanf(" %c", &estado2);
+    printf("Carta 2 - Estado (Nome completo): \n");
+    scanf(" %49[^\n]", estado2);
 
     printf("Carta 2 - Codigo (ex.: B02): \n");
     scanf(" %3s", codigo2);
@@ -68,7 +68,7 @@ int main () {
 
     /* -------- Exibicao -------- */
     printf("Carta 1:\n");
-    printf("Estado: %c\n", estado1);
+    printf("Estado: %s\n", estado1);
     printf("Codigo: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", cidade1);
     printf("Populacao: %d\n", populacao1);
@@ -77,7 +77,7 @@ int main () {
     printf("Numero de Pontos Turisticos: %d\n\n", pontos1);
 
     printf("Carta 2:\n");
-    printf("Estado: %c\n", estado2);
+    printf("Estado: %s\n", estado2);
     printf("Codigo: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", cidade2);
     printf("Populacao: %d\n", populacao2);
