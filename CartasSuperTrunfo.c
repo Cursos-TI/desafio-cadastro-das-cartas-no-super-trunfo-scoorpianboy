@@ -111,9 +111,9 @@ int main() {
     super1 = (float)pop1 + area1 + pib1 + (float)pontos1 + pibpc1 + invdens1;
     super2 = (float)pop2 + area2 + pib2 + (float)pontos2 + pibpc2 + invdens2;
 
-    /* -------------------------
+    /* ----------------------------
        EXIBICAO DAS CARTAS
-       ------------------------- */
+       ----------------------------*/
     printf("=== Carta 1 ===\n");
     printf("Estado: %s\n", estado1);
     printf("Codigo: %s\n", codigo1);
