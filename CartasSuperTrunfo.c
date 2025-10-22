@@ -5,9 +5,9 @@ int main() {
        SUPER TRUNFO - NÍVEIS: NOVATO + AVENTUREIRO + MESTRE
        ====================================================== */
 
-    /* -------------------------
+    /* --------------------------
        DECLARAÇÃO DAS VARIÁVEIS
-       ------------------------- */
+       -------------------------- */
 
     /* Carta 1 */
     char estado1[50];             /* Nome do estado (ex: São Paulo) */
