@@ -39,7 +39,7 @@ int main() {
 
     /* -------------------------
           ENTRADA DE DADOS 
-       ------------------------- */
+       --------------------------- */
 
     printf("=== Super Trunfo de Cidades ===\n");
     printf("ATENCAO:\n");
